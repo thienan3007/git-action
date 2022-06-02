@@ -1,4 +1,4 @@
-name: WebAppication1
+name: WebApplication1
 on:
   push:
     branches:
@@ -20,7 +20,7 @@ jobs:
       - name: Test
         run: dotnet test --no-build
       - name: Publish
-        run: dotnet publish WebAppication1/WebAppication1.csproj -c Release -o website
+        run: dotnet publish WebApplication1/WebApplication1.csproj -c Release -o website
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
